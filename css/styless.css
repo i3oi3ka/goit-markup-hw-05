@@ -606,6 +606,8 @@ footer {
   border: 1px solid rgba(var(--cl-secondary), 0.4);
   border-radius: 4px;
   outline: transparent;
+  transition: var(--transition-item);
+  transition-property: border-color;
 }
 
 .modal-form-input:focus,
