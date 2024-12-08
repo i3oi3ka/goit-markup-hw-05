@@ -508,7 +508,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 40px;
-  max-width: 165px;
+  min-width: 165px;
   padding: 8px 24px;
   padding-right: 64px;
   border: none;
@@ -537,7 +537,7 @@ footer {
   opacity: 0;
   visibility: hidden;
   background-color: rgba(var(--cl-secondary), 0.4);
-  transition: opacity (--transition-item);
+  transition: opacity var(--transition-item);
   pointer-events: none;
 }
 
@@ -658,6 +658,9 @@ footer {
 }
 
 .modal-form-message {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   height: 120px;
   padding: 8px 16px;
   resize: none;
@@ -683,12 +686,12 @@ footer {
 }
 
 .modal-form-agreement-desc {
-  display: inline-flex;
   font-size: 12px;
   line-height: 1.17;
   color: var(--cl-light-slate);
   letter-spacing: 0.04em;
   user-select: none;
+  margin-bottom: 24px;
 }
 
 .modal-form-checkbox-icon {
@@ -706,12 +709,12 @@ footer {
 }
 
 .modal-form-agreement-link {
-  color: rgb(var(--cl-accent));
   text-decoration: underline solid;
   text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+  color: var(--cl-accent);
 }
 
 .btn-modal {
