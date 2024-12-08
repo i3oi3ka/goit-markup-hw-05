@@ -537,7 +537,8 @@ footer {
   opacity: 0;
   visibility: hidden;
   background-color: rgba(var(--cl-secondary), 0.4);
-  transition: opacity var(--transition-item);
+  transition: var(--transition-item);
+  transition-property: opacity, visibility;
   pointer-events: none;
 }
 
@@ -658,6 +659,7 @@ footer {
 }
 
 .modal-form-message {
+  color: rgba(var(--cl-secondary), 0.4);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -668,6 +670,10 @@ footer {
 
 .modal-form-message::placeholder {
   color: rgba(var(--cl-secondary), 0.4);
+}
+
+.modal-form-agreement {
+  margin-bottom: 24px;
 }
 
 .modal-form-checkbox {
@@ -691,7 +697,6 @@ footer {
   color: var(--cl-light-slate);
   letter-spacing: 0.04em;
   user-select: none;
-  margin-bottom: 24px;
 }
 
 .modal-form-checkbox-icon {
